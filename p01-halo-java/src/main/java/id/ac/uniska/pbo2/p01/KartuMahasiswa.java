@@ -9,14 +9,14 @@ public class KartuMahasiswa {
         int semester = 5;
         String alasan = "Ingin meningkatkan kemampuan pemrograman berbasis objek";
 
-        System.out.println("==============================");
-        System.out.println("KARTU MAHASISWA PBO 2");
-        System.out.println("==============================");
+        System.out.println("==========================================");
+        System.out.println("           KARTU MAHASISWA PBO 2");
+        System.out.println("==========================================");
         System.out.println("Nama     : " + nama);
         System.out.println("NPM      : " + npm);
         System.out.println("Prodi    : " + prodi);
         System.out.println("Semester : " + semester);
         System.out.println("Alasan   : " + alasan);
-        System.out.println("==============================");
+        System.out.println("==========================================");
     }
 }
