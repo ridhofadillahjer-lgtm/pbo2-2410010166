@@ -1,0 +1,33 @@
+REFLEKSI PBO 2 - P02
+Perpustakaan Mini
+
+Nama     : M. Ridho Fadillah
+NPM      : 2410010166
+Prodi    : Teknik Informatika
+
+
+1. Mengapa Koleksi dibuat sebagai abstract class?
+
+Koleksi dibuat sebagai abstract class karena menjadi dasar untuk berbagai jenis koleksi seperti Buku, Majalah, dan Skripsi. Class ini menyediakan atribut dan method umum, tetapi keterangan() dibuat abstract sehingga setiap subclass dapat memberikan implementasinya sendiri.
+
+
+2. Apa perbedaan abstract Koleksi dan interface BisaDipinjam?
+
+Koleksi adalah abstract class yang menyimpan data dan perilaku umum koleksi. Sedangkan BisaDipinjam adalah interface yang mendefinisikan kemampuan atau kontrak yang harus dimiliki class yang dapat dipinjam, yaitu batasHariPinjam() dan hitungDenda().
+
+
+3. Mengapa status tidak diberi setter?
+
+Karena perubahan status harus dikontrol melalui aturan bisnis. Status hanya boleh berubah melalui pinjam() dan kembalikan(), sehingga tidak bisa diubah sembarangan dari luar class.
+
+
+4. Sebutkan satu baris di Perpustakaan yang menunjukkan polymorphism dan jelaskan.
+
+List<Koleksi> daftarKoleksi = new ArrayList<>();
+
+Baris tersebut menunjukkan polymorphism karena List<Koleksi> dapat menyimpan berbagai objek turunan Koleksi, seperti Buku, Majalah, dan Skripsi.
+
+
+5. Kapan memilih record dibanding class biasa?
+
+Record cocok digunakan untuk objek data sederhana yang terutama menyimpan data dan tidak membutuhkan banyak perilaku atau perubahan state. Pada program ini, Anggota cocok menggunakan record karena hanya menyimpan npm dan nama.

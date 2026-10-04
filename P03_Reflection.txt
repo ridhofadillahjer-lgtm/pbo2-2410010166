@@ -1,0 +1,16 @@
+REFLECTION P03 – KOMPONEN GUI SWING & FLATLAF
+
+1. Apa perbedaan top-level container, intermediate container, dan atomic component? Berikan contohnya.
+Top-level container adalah wadah utama aplikasi GUI, contohnya JFrame. Intermediate container digunakan untuk mengelompokkan komponen lain, contohnya JPanel dan JScrollPane. Atomic component adalah komponen yang langsung digunakan untuk berinteraksi dengan pengguna, seperti JButton, JTextField, JCheckBox, dan JRadioButton.
+
+2. Mengapa dua JRadioButton harus berada dalam ButtonGroup yang sama?
+Agar kedua JRadioButton menjadi pilihan yang saling eksklusif, sehingga pengguna hanya dapat memilih satu pilihan dalam satu kelompok.
+
+3. Kapan memilih JComboBox dibanding JRadioButton?
+JComboBox lebih cocok ketika pilihan cukup banyak dan ruang pada form terbatas. JRadioButton lebih cocok ketika jumlah pilihan sedikit dan semua pilihan ingin langsung terlihat oleh pengguna.
+
+4. Mengapa tidak boleh mengedit initComponents() secara langsung? Di mana kode tambahan sebaiknya diletakkan?
+Karena initComponents() merupakan kode yang dibuat dan dikelola otomatis oleh NetBeans GUI Builder sehingga perubahan manual dapat tertimpa atau menyebabkan masalah pada form. Kode tambahan seperti logika tombol, pengaturan placeholder, dan konfigurasi lainnya sebaiknya diletakkan di constructor setelah initComponents() atau pada method/event handler yang sesuai.
+
+5. Mengapa FlatLightLaf.setup() harus dipanggil sebelum form dibuat?
+Agar tema FlatLaf sudah diterapkan sebelum komponen-komponen pada form dibuat dan ditampilkan, sehingga komponen menggunakan tampilan FlatLaf sejak awal.
