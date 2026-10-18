@@ -72,7 +72,7 @@ Dengan kode `setMinimumSize(getSize())`, jendela tidak bisa dikecilkan sekecil-k
 
 ## 6. Saling Menilai (Tahap 4)
 
-Dinilai oleh: **[ISI NAMA TEMAN]**
+Dinilai oleh: Rahmat Ramadhan (2410010258)
 
 | No | Pemeriksaan | Ya / Belum |
 |----|-------------|------------|
